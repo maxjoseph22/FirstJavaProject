@@ -11,7 +11,12 @@ public class DJ {
         this.fee = fee;
     }
 
-}
+    public void rewind(int times) {
+        System.out.println("DJ " + this.name + " pulled up the track " + times + " times!");
+        for (int i = 1; i <= times; i++) {
+            System.out.println("Pulllllll uppppppp");
+        }
+    }}
 
 
 
