@@ -2,12 +2,13 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        DJ dj = new DJ("Facta", "UK bass", 1000, 750.00);
-
+        DJ facta = new DJ("Facta", "UK bass", 1000, 750.00);
+        Crowd crowd = new Crowd(300, true);
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-        System.out.println("Welcome to the club!");
-        dj.rewind(20);
+        System.out.println("Welcome to the club! Tonight we have DJ " + facta.name + " playing some " + facta.genre + "!");
+        facta.rewind(3);
+        crowd.reaction();
 
         }
 
